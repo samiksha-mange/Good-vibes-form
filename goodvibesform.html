@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes Form</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        #form{
+            background-color: white;
+            margin-top: 69px;
+            margin-right: 90px ;
+            margin-bottom:90px ;
+            margin-left: 90px;
+            padding-left: 66px;
+            padding-top: 22px;
+
+         }
+         #firstheading{
+            text-align:center;
+            
+            font-size: 50px;
+
+         }
+         h3{
+            text-align: center;
+            font-size: 30px;
+
+         }
+         #table{
+            padding-left: 150px;
+            margin: auto;
+
+         }
+         td{
+            padding-top: 7px;
+            padding-bottom: 10px;
+         }
+         button{
+            background-color:lightblue;
+            height: 49px;
+            width: 122px;
+            margin-left: 450px;
+            margin-top: 25px;
+            margin-bottom: 30px;    
+         }
+         input{
+            padding: 10px;
+            border-radius: 4px;
+    
+         }
+         select{
+            padding: 10px;
+            border-radius: 4px;
+         }
+
+         
+    </style>
+</head>
+<body>
+    <h1 id="firstheading">Good Vibes Form</h1>
+    <form action="goodform2.html" id="form">
+        <h3>Tell us Somthing that happen to you today </h3>
+        <table id="table"> 
+            <tr>
+                <td> NAME </td>
+                <td><input type="text" placeholder="Enter your Name" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td> E-mail</td>
+                <td><input type="text" placeholder="Enter your Email Address" name="Email" required></td>
+            </tr>
+
+            <tr>
+                <td>On a scale of 1-10, how good was it? </td>
+                <td><input type="number" placeholder="enter the no between 1 and 10"  required></td>
+            </tr>
+
+            <tr>
+                <td>Where did it happen? </td>
+                <td><select name="location">
+                <option>At home</option>
+                <option>At univarsity</option>
+                <option>At Work</option>
+                <option>At any other location</option> 
+                </select>
+                </td>    
+            </tr>
+            <tr>
+
+                <td>At what time of day did it happen?</td>
+                <td><input type="radio" name="time">Morning <br>
+                    <input type="radio" name="time">Afternoon <br>
+                    <input type="radio" name="time">Evening
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    what emotions did you exprience? <br> (select all that apply)
+                </td>
+                <td>
+                    <input type="checkbox" name="c1">Excited <br>
+                    <input type="checkbox" name="c1">Humbled <br>
+                    <input type="checkbox" name="c1">Elated<br>
+                    <input type="checkbox" name="c1">loved<br>
+                    <input type="checkbox" name="c1">Enthusiastic <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Please describe your positive exprience.</td>
+                <td ><textarea rows="6" cols="40" placeholder="Enter your exprience here.." name="exprience"> </textarea> </td>
+            </tr>
+
+
+        </table>
+
+        <button type="submit" name="submit-btn">Submit</button>
+    </form>
+   
+</body>
+</html>
